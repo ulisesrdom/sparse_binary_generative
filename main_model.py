@@ -74,6 +74,5 @@ else :
    end_time     = time.time()
    elapsed_time_seconds = end_time - start_time
    elapsed_time_minutes = elapsed_time_seconds / 60.
-   # Write the time to an output text file
    with open(OUT_FOLDER + '/ELAPSED_TIME.txt', 'w') as file:
       file.write(f'Time taken: {elapsed_time_minutes:.2f} minutes\n')
